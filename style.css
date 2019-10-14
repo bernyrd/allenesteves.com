@@ -227,14 +227,15 @@ li{
     margin-bottom: 6rem;
 }
 
-.about-heading h1{
+.about-heading h1 {
     font-size: 10rem;
+    font-family: 'Mansalva', cursive;
     opacity: .3;
 }
 
 .about-heading h6 {
+    font-family: 'Mansalva', cursive;
     font-size: 3rem;
-
 }
 
 
