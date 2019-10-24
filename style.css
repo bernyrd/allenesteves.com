@@ -7,8 +7,14 @@
 
 html {
     font-size: 10px;
-    font-family: 'Marck Script', cursive;
+    font-family: 'Exotc350 Bd BT', cursive;
     color: #eee;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Exotc350 Bd BT';
+
 }
 
 body{
@@ -18,15 +24,20 @@ body{
     background-size:cover;
 }
 
+section{
+    padding: 6rem 0;
+}
+
 a{
     text-decoration:none;
     color: #eee;
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 15px;
     font-weight: 300;
     font-family: 'Libre Baskerville', serif;
+    align-content: center;
 }
 
 img{
@@ -248,30 +259,12 @@ li{
 
 .profile-img{
     flex: 1;
+    width: 50rem;
     margin-right: 5rem;
 }
 
 .about-details{
     flex: 1;
-}
-
-.social-media {
-    margin-top: 5rem;
-    font-size: 5rem;
-    transition: color 650ms;
-}
-
-
-.fa-facebook-square:hover{
-    color: #4267b2;
-}
-
-.fa-twitter-square:hover {
-    color: #38a1f3;
-}
-
-.fa-instagram-square:hover {
-    color: #ea4c89;
 }
 
 
@@ -337,6 +330,7 @@ li{
 }
 
 .portfolio-description{
+    flex: 1;
 }
 
 
@@ -376,8 +370,8 @@ li{
     position: relative;
     padding: 5rem;
     list-style: none;
-    text-align: left;
-    width: 80%;
+    text-align:left;
+    width: 450px;
 }
 
 .timeline h1{
@@ -392,7 +386,8 @@ li{
     border-bottom: 1px solid rgba(255,255,255, 0.75);
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    position: relative;
+    position:relative;
+
 }
 
 .timeline .date:last-of-type{
@@ -426,6 +421,195 @@ li{
     width: 1.5rem;
     background-color: #313534;
 }
+
+.social-media {
+    padding:0;
+    font-size: 5rem;
+    transition: color 650ms;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+
+.fa-facebook-square:hover {
+    color: #4267b2;
+}
+
+
+.fa-phone-square:hover {
+    color: lawngreen;
+}
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: url("orange.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .landing-text h1 {
+        font-size: 15rem;
+    }
+
+    .landing-text h6 {
+        font-size: 2.5rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .li {
+        margin: 2rem 0;
+    }
+
+    .nav-link {
+        font-size: 4.5rem;
+    }
+
+    .about-heading h1 {
+        font-size: 8rem;
+    }
+
+    .section-heading h1 {
+        font-size: 3rem;
+    }
+
+    .about-details .nav-list {
+        flex-direction: initial;
+    }
+
+    .about-details li {
+        margin: 0 2rem;
+    }
+
+    .icon-container {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .icon-container  i{
+        font-size: 4rem;
+    }
+
+    .timeline .date::before {
+        left: -20rem;
+    }
+
+    .timeline .date::after {
+        left: -5.9rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .landing-text h1{
+        font-size: 8rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.4rem;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+    }
+
+    .about .container{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+
+    .portfolio-img{
+        flex-direction: column;
+    }
+
+    .portfolio-item{
+        flex-direction: column;
+    }
+
+    .portfolio-img{
+        margin: 0 0 2rem;
+    }
+
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+
+    .timeline p{
+        font-size: 1.4rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.4rem;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .up{
+        right: 2rem;
+    }
+
+
+
+}
+
+
+
+
 
 
 
