@@ -9,6 +9,7 @@ html {
     font-size: 10px;
     font-family: 'Exotc350 Bd BT', cursive;
     color: #eee;
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -163,7 +164,7 @@ li{
 
 .menu-toggler{
     position: absolute;
-    top: 5rem;
+    top: 4rem;
     right: 5rem;
     width: 5rem;
     height: 4rem;
@@ -208,6 +209,10 @@ li{
 
 .open .bar.end {
     transform: rotate(-450deg) translateX(-.8rem);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .landing-text {
@@ -465,6 +470,7 @@ li{
     display: flex;
     animation: pulse 2s infinite;
     cursor: pointer;
+
 }
 
 .up i{
