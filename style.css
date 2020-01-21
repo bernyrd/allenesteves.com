@@ -7,7 +7,7 @@
 
 html {
     font-size: 10px;
-    font-family: 'Exotc350 Bd BT', cursive;
+    font-family: 'Roboto', sans-serif;
     color: #eee;
     scroll-behavior: smooth;
 }
@@ -21,28 +21,31 @@ html {
 body{
     width:100%;
     height:100%;
-    background:url("orange.jpg") no-repeat center fixed;
     background-size:cover;
+}
+
+canvas {
+    position: fixed;
+    z-index: -10;
 }
 
 section{
     padding: 6rem 0;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: #eee;
 }
 
 p {
     font-size: 15px;
     font-weight: 300;
-    font-family: 'Libre Baskerville', serif;
     align-content: center;
 }
 
 img{
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -50,7 +53,6 @@ img{
 section{
     padding: 6rem;
 }
-
 
 
 .container{
@@ -107,8 +109,6 @@ section{
 
 
 
-
-
 header{
     width:100%;
     height:100vh;
@@ -117,7 +117,7 @@ header{
 .top-nav {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: -100vh;
     z-index: 50;
     display: flex;
@@ -134,16 +134,16 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    
-
+    position: fixed;
+   
 }
 
 li{
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .nav-link {
-    font-family: 'Mansalva', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -156,10 +156,9 @@ li{
    
 }
 
-.top-nav.open{
+.top-nav.open {
     top: 0;
     border-radius: initial;
-    
 }
 
 .menu-toggler{
@@ -178,7 +177,8 @@ li{
 
 .menu-toggler.open {
     transform: rotate(-45deg);
-    font-family: 'Mansalva', cursive;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
 }
 
 .bar {
@@ -209,10 +209,6 @@ li{
 
 .open .bar.end {
     transform: rotate(-450deg) translateX(-.8rem);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .landing-text {
@@ -426,7 +422,7 @@ html {
     content: '';
     box-shadow: 0 0 0 4px #fd57bf;
     border-radius: 100%;
-    left: -8rem;
+    left: -7rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313534;
@@ -459,18 +455,17 @@ html {
     position: relative;
 }
 
-.up{
+.up {
     position: absolute;
     width: 5rem;
     height: 5rem;
     background-color: #eee;
-    top: -2.5rem;
+    top: -.5rem;
     right: 5rem;
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
     cursor: pointer;
-
 }
 
 .up i{
@@ -497,9 +492,12 @@ html {
 
 @media screen and (max-width: 768px) {
     body {
-        background: url("orange.jpg") no-repeat center fixed;
         background-size: cover;
     }
+
+    .canvas{
+        position: fixed;
+            }
 
     .landing-text h1 {
         font-size: 15rem;
@@ -551,7 +549,7 @@ html {
     }
 
     .timeline .date::after {
-        left: -5.9rem;
+        left: -7rem;
     }
 }
 
