@@ -164,3 +164,4 @@ frame();
 
 // First particle explosion
 initParticles(config.particleNumber);
+
